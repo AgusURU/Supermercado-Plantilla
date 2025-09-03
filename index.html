@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es" style="height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermercado</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body style="min-height: 100vh; display: flex; flex-direction: column;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="index.html">Supermercado</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="ms-auto d-flex gap-3">
+                    <a class="nav-link text-white" href="index.html">Inicio</a>
+                    <a class="nav-link text-white" href="pages/ofertas.html">Ofertas</a>
+                    <a class="nav-link text-white" href="pages/sobrenosotros.html">Sobre Nosotros</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carrusel de ofertas -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4 fw-bold">Ofertas Destacadas</h2>
+        <div id="ofertasCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+                <!-- Oferta Coca Cola -->
+                <div class="carousel-item active">
+                    <div class="d-flex flex-column align-items-center">
+                        <img src="https://dipiandistribuidora.uy/wp-content/uploads/2021/07/DIPIAN-DISTRIBUIDORA-URUGUAY_0023_coca-1.5l-x6-1.jpg" class="d-block rounded shadow" alt="Oferta Coca Cola" style="width:200px; height:200px; object-fit:cover;">
+                        <h5 class="mt-3">Oferta Coca Cola X6</h5>
+                        <div>
+                            <span class="text-muted text-decoration-line-through me-2">$210</span>
+                            <span class="fw-bold text-success fs-4">$99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Oferta Pan -->
+                <div class="carousel-item">
+                    <div class="d-flex flex-column align-items-center">
+                        <img src="https://prod-resize.tiendainglesa.com.uy/images/small/P047261-1.jpg?20170830115433,Pan-de-Viena-PAGNIFIQUE-x-8-Unidades-en-Tienda-Inglesa" class="d-block rounded shadow" alt="Oferta Pan" style="width:200px; height:200px; object-fit:cover;">
+                        <h5 class="mt-3">Oferta Pan</h5>
+                        <div>
+                            <span class="text-muted text-decoration-line-through me-2">$130</span>
+                            <span class="fw-bold text-success fs-4">$99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Oferta Jamón -->
+                <div class="carousel-item">
+                    <div class="d-flex flex-column align-items-center">
+                        <img src="https://tumayorista.uy/wp-content/uploads/jam%C3%B3n-ruv%C3%AD-de-do%C3%B1a-coca-media-unidad.jpg" class="d-block rounded shadow" alt="Oferta Jamón" style="width:200px; height:200px; object-fit:cover;">
+                        <h5 class="mt-3">Oferta Jamón X100gr</h5>
+                        <div>
+                            <span class="text-muted text-decoration-line-through me-2">$59</span>
+                            <span class="fw-bold text-success fs-4">$40</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Oferta Helado -->
+                <div class="carousel-item">
+                    <div class="d-flex flex-column align-items-center">
+                        <img src="https://prod-resize.tiendainglesa.com.uy/images/medium/P100568-1.jpg?20211015145614,Helado-sabor-Dulce-de-Leche-Granizado-CRUFI-1-L-en-Tienda-Inglesa" class="d-block rounded shadow" alt="Oferta Helado" style="width:200px; height:200px; object-fit:cover;">
+                        <h5 class="mt-3">Oferta Helado</h5>
+                        <div>
+                            <span class="text-muted text-decoration-line-through me-2">$220</span>
+                            <span class="fw-bold text-success fs-4">$150</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#ofertasCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#ofertasCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </div>
+
+    <main class="flex-grow-1 d-flex align-items-center justify-content-center">
+        <div class="container mb-5">
+            <div class="row g-4 justify-content-center">
+                <div class="col-12 col-md-4 d-flex justify-content-center">
+                    <div class="img-wrapper">
+                        <img src="https://www.alumeglass.com.br/images/c4f7bd9bce84cf96aaf230114dd138e0.JPEG" alt="Fachada del supermercado" class="img-fluid rounded shadow" />
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 d-flex justify-content-center">
+                    <div class="img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1655522060985-6769176edff7?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW50ZXJpb3IlMjBkZWwlMjBzdXBlcm1lcmNhZG98ZW58MHx8MHx8fDA%3D" alt="Interior del supermercado" class="img-fluid rounded shadow" />
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 d-flex justify-content-center">
+                    <div class="img-wrapper">
+                        <img src="https://thumbs.dreamstime.com/b/departamento-de-la-carnicer%C3%ADa-de-supermercado-67673267.jpg" alt="Tercera imagen supermercado" class="img-fluid rounded shadow" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <footer class="bg-danger text-white py-4 mt-5" style="margin-top: auto;">
+        <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+            <div class="d-flex align-items-center gap-2">
+                <button class="btn btn-light btn-sm" onclick="location.href='#soporte'">Soporte</button>
+                <button class="btn btn-light btn-sm" onclick="location.href='#trabaja'">Trabaja con Nosotros</button>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+                <button class="btn btn-outline-light btn-sm rounded-circle p-2 d-flex align-items-center justify-content-center" style="width:50px; height:50px;" onclick="window.open('https://www.instagram.com/tuimpulsodigital.uy/', '_blank')">
+                    <img src="assets/logoid.png" alt="logo Instagram" style="width:100%; height:100%; object-fit:cover; border-radius:50%;" />
+                </button>
+                <span>Creado por Impulso Digital</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
