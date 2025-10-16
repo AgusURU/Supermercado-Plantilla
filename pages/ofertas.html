@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Supermercado</title>
+    <title>Ofertas - Supermercado</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body style="min-height: 100vh; display: flex; flex-direction: column;">
@@ -25,8 +26,255 @@
         </div>
     </nav>
 
-    <main class="flex-grow-1 d-flex align-items-center justify-content-center">
+    <main class="flex-grow-1 py-5">
+        <div class="container">
+            <!-- Hero Section Ofertas -->
+            <section class="text-center mb-5">
+                <h1 class="display-4 fw-bold text-danger mb-3">¡Ofertas Imperdibles!</h1>
+                <p class="lead text-muted">Descubre los mejores precios en productos seleccionados</p>
+                <div class="badge bg-danger fs-6 p-2 mb-4">
+                    <i class="bi bi-clock-fill me-1"></i>Ofertas válidas hasta fin de mes
+                </div>
+            </section>
 
+            <!-- Filtros -->
+            <section class="mb-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="d-flex flex-wrap justify-content-center gap-2">
+                            <button class="btn btn-outline-primary active">Todas</button>
+                            <button class="btn btn-outline-primary">Bebidas</button>
+                            <button class="btn btn-outline-primary">Carnes</button>
+                            <button class="btn btn-outline-primary">Lácteos</button>
+                            <button class="btn btn-outline-primary">Panadería</button>
+                            <button class="btn btn-outline-primary">Limpieza</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Grid de Ofertas -->
+            <section class="row g-4 mb-5">
+                <!-- Oferta 1 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 shadow-sm border-0 position-relative overflow-hidden">
+                        <div class="position-absolute top-0 end-0 bg-danger text-white px-2 py-1 rounded-start">
+                            <small class="fw-bold">-50%</small>
+                        </div>
+                        <img src="https://dipiandistribuidora.uy/wp-content/uploads/2021/07/DIPIAN-DISTRIBUIDORA-URUGUAY_0023_coca-1.5l-x6-1.jpg" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Coca Cola">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Coca Cola Pack x6</h5>
+                            <p class="card-text text-muted small">1.5L cada botella</p>
+                            <div class="mb-2">
+                                <span class="text-muted text-decoration-line-through me-2">$210</span>
+                                <span class="text-danger fw-bold fs-4">$99</span>
+                            </div>
+                            <div class="mb-2">
+                                <small class="text-success">
+                                    <i class="bi bi-check-circle-fill me-1"></i>Stock disponible
+                                </small>
+                            </div>
+                            <button class="btn btn-danger w-100">
+                                <i class="bi bi-cart-plus me-1"></i>Agregar al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Oferta 2 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 shadow-sm border-0 position-relative overflow-hidden">
+                        <div class="position-absolute top-0 end-0 bg-danger text-white px-2 py-1 rounded-start">
+                            <small class="fw-bold">-33%</small>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?auto=format&fit=crop&w=400&q=80" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Pan Artesanal">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Pan Artesanal</h5>
+                            <p class="card-text text-muted small">Elaborado diariamente</p>
+                            <div class="mb-2">
+                                <span class="text-muted text-decoration-line-through me-2">$120</span>
+                                <span class="text-danger fw-bold fs-4">$80</span>
+                            </div>
+                            <div class="mb-2">
+                                <small class="text-success">
+                                    <i class="bi bi-check-circle-fill me-1"></i>Recién horneado
+                                </small>
+                            </div>
+                            <button class="btn btn-danger w-100">
+                                <i class="bi bi-cart-plus me-1"></i>Agregar al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Oferta 3 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 shadow-sm border-0 position-relative overflow-hidden">
+                        <div class="position-absolute top-0 end-0 bg-danger text-white px-2 py-1 rounded-start">
+                            <small class="fw-bold">-29%</small>
+                        </div>
+                        <img src="https://discouy.vtexassets.com/arquivos/ids/1860838/Jamon-Cocido-extra-LA-CONSTANCIA-x-50-g-1.jpg?v=638641534447200000" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Jamón Cocido">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Jamón Cocido Premium</h5>
+                            <p class="card-text text-muted small">500g - Calidad superior</p>
+                            <div class="mb-2">
+                                <span class="text-muted text-decoration-line-through me-2">$450</span>
+                                <span class="text-danger fw-bold fs-4">$320</span>
+                            </div>
+                            <div class="mb-2">
+                                <small class="text-success">
+                                    <i class="bi bi-check-circle-fill me-1"></i>Stock disponible
+                                </small>
+                            </div>
+                            <button class="btn btn-danger w-100">
+                                <i class="bi bi-cart-plus me-1"></i>Agregar al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Oferta 4 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 shadow-sm border-0 position-relative overflow-hidden">
+                        <div class="position-absolute top-0 end-0 bg-danger text-white px-2 py-1 rounded-start">
+                            <small class="fw-bold">-32%</small>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?auto=format&fit=crop&w=400&q=80" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Helado">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Helado Artesanal</h5>
+                            <p class="card-text text-muted small">1L - Varios sabores</p>
+                            <div class="mb-2">
+                                <span class="text-muted text-decoration-line-through me-2">$220</span>
+                                <span class="text-danger fw-bold fs-4">$150</span>
+                            </div>
+                            <div class="mb-2">
+                                <small class="text-success">
+                                    <i class="bi bi-check-circle-fill me-1"></i>Stock disponible
+                                </small>
+                            </div>
+                            <button class="btn btn-danger w-100">
+                                <i class="bi bi-cart-plus me-1"></i>Agregar al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Más ofertas... -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 shadow-sm border-0 position-relative overflow-hidden">
+                        <div class="position-absolute top-0 end-0 bg-danger text-white px-2 py-1 rounded-start">
+                            <small class="fw-bold">-40%</small>
+                        </div>
+                        <img src="https://dipiandistribuidora.uy/wp-content/uploads/2024/05/Mesa-de-trabajo-3.png" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Leche">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Leche Entera</h5>
+                            <p class="card-text text-muted small">1L - Pack x6 unidades</p>
+                            <div class="mb-2">
+                                <span class="text-muted text-decoration-line-through me-2">$300</span>
+                                <span class="text-danger fw-bold fs-4">$180</span>
+                            </div>
+                            <div class="mb-2">
+                                <small class="text-success">
+                                    <i class="bi bi-check-circle-fill me-1"></i>Stock disponible
+                                </small>
+                            </div>
+                            <button class="btn btn-danger w-100">
+                                <i class="bi bi-cart-plus me-1"></i>Agregar al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 shadow-sm border-0 position-relative overflow-hidden">
+                        <div class="position-absolute top-0 end-0 bg-danger text-white px-2 py-1 rounded-start">
+                            <small class="fw-bold">-25%</small>
+                        </div>
+                        <img src="https://www.elnovilloalegre.com.uy/wp-content/uploads/2016/06/IMG_0472-Edit.jpg" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Carne">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Asado de Tira</h5>
+                            <p class="card-text text-muted small">1kg - Carne premium</p>
+                            <div class="mb-2">
+                                <span class="text-muted text-decoration-line-through me-2">$800</span>
+                                <span class="text-danger fw-bold fs-4">$600</span>
+                            </div>
+                            <div class="mb-2">
+                                <small class="text-success">
+                                    <i class="bi bi-check-circle-fill me-1"></i>Stock disponible
+                                </small>
+                            </div>
+                            <button class="btn btn-danger w-100">
+                                <i class="bi bi-cart-plus me-1"></i>Agregar al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 shadow-sm border-0 position-relative overflow-hidden">
+                        <div class="position-absolute top-0 end-0 bg-danger text-white px-2 py-1 rounded-start">
+                            <small class="fw-bold">-35%</small>
+                        </div>
+                        <img src="https://discouy.vtexassets.com/arquivos/ids/1854585/Detergente-liquido-ropa-CONEJO-amor-3-L-0.jpg?v=638620010824100000" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Detergente">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Detergente Líquido</h5>
+                            <p class="card-text text-muted small">3L - Concentrado</p>
+                            <div class="mb-2">
+                                <span class="text-muted text-decoration-line-through me-2">$280</span>
+                                <span class="text-danger fw-bold fs-4">$180</span>
+                            </div>
+                            <div class="mb-2">
+                                <small class="text-success">
+                                    <i class="bi bi-check-circle-fill me-1"></i>Stock disponible
+                                </small>
+                            </div>
+                            <button class="btn btn-danger w-100">
+                                <i class="bi bi-cart-plus me-1"></i>Agregar al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 shadow-sm border-0 position-relative overflow-hidden">
+                        <div class="position-absolute top-0 end-0 bg-danger text-white px-2 py-1 rounded-start">
+                            <small class="fw-bold">-45%</small>
+                        </div>
+                        <img src="https://tatauy.vtexassets.com/arquivos/ids/218623/Queso-Muzzarella-Atm-Mod-Conaprole-200-Gr-3-13643.jpg?v=637671458379670000" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Queso">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Queso Mozzarella</h5>
+                            <p class="card-text text-muted small">400g - Fresco</p>
+                            <div class="mb-2">
+                                <span class="text-muted text-decoration-line-through me-2">$320</span>
+                                <span class="text-danger fw-bold fs-4">$175</span>
+                            </div>
+                            <div class="mb-2">
+                                <small class="text-success">
+                                    <i class="bi bi-check-circle-fill me-1"></i>Stock disponible
+                                </small>
+                            </div>
+                            <button class="btn btn-danger w-100">
+                                <i class="bi bi-cart-plus me-1"></i>Agregar al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Call to Action -->
+            <section class="text-center py-5 bg-light rounded">
+                <h3 class="text-primary mb-3">¿No encontraste lo que buscabas?</h3>
+                <p class="lead mb-4">Visitanos en nuestra tienda física o contáctanos por WhatsApp</p>
+                <div class="d-flex flex-wrap justify-content-center gap-3">
+                    <a href="#" class="btn btn-success btn-lg">
+                        <i class="bi bi-whatsapp me-2"></i>WhatsApp
+                    </a>
+                    <a href="../index.html" class="btn btn-outline-primary btn-lg">
+                        <i class="bi bi-house me-2"></i>Volver al inicio
+                    </a>
+                </div>
+            </section>
+        </div>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
